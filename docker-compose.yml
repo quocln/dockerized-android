@@ -1,7 +1,8 @@
 version: "3.8"
 services:
     core-emulator:
-        image: secsi/dockerized-android-core-emulator-8.1
+        image: secsi/dockerized-android-core-emulator-7.1.1
+        privileged: true
         ports:
             - "4242:4242"
             - "6080:6080"
