@@ -9,6 +9,12 @@ services:
         networks:
             dockerized-android-emulator-net:
                 ipv4_address: 10.0.1.2
+        environment:
+            TERMINAL: true
+            APK: true
+            FORWARD: true
+            REBOOT: true
+            DEVICEINFO: true
     ui:
         image: secsi/dockerized-android-ui
         ports:
